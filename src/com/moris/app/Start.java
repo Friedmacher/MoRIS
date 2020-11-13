@@ -5,12 +5,14 @@
  */
 package com.moris.app;
 
-import javafx.application.Application;
+import com.moris.app.init.Initialize;
 
 public class Start {
 
     public static void main(String[] args) {
-	Application.launch(Main.class);
+	Initialize init = new Initialize();
+	
+//	Application.launch(Main.class);
     }
 
 }

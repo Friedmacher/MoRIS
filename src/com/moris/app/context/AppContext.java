@@ -6,6 +6,7 @@
 package com.moris.app.context;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 
 import com.moris.app.OpenWindow;
 
@@ -20,8 +21,9 @@ public class AppContext {
 	// List of all open windows
 	private ObservableList<OpenWindow> openWindows = FXCollections.observableArrayList();
 	
-	// Database 
-	private EntityManager entityManager = null;
+	// Database
+	private EntityManagerFactory emf = null;
+	private EntityManager em = null;
 	
 	/*
 	 * Constructor
@@ -31,7 +33,7 @@ public class AppContext {
 	
 	/*
 	 * Singleton implementation
-	 * only one instance of the context object should be availabe for the whole application
+	 * only one instance of the context object should be available for the whole application
 	 */
 	public static AppContext getInstance() {
 		if (contextInstance == null) {
@@ -65,19 +67,32 @@ public class AppContext {
 	
 	
 	/*
+	 * Getter for entity manager factory
+	 */
+	public EntityManagerFactory getEntityManagerFactory() {
+	    return this.emf;
+	}
+	
+	/*
+	 * Setter for entity factory
+	 */
+	public void setEntityManagerFactory(EntityManagerFactory emf) {
+	    this.emf = emf;
+	}
+	
+	/*
 	 * Getter for entity manager
 	 */
 	public EntityManager getEntityManager() {
-	    return this.entityManager;
+	    return this.em;
 	}
 	
 	/*
 	 * Setter for entity manager
 	 */
 	public void setEntityManager(EntityManager em) {
-	    this.entityManager = em;
+	    this.em = em;
 	}
-	
 	
 	
 

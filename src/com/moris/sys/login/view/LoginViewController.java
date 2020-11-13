@@ -80,6 +80,7 @@ import javafx.scene.text.Text;
 	 em.getTransaction().begin();
 	 User myUser = em.find(User.class, tfUserName.getText());
 	 em.getTransaction().commit();
+	 
 	 if (myUser != null) {
 	     if (pwEncoder.matches(tfPassword.getText(), myUser.getPassword())) {
 		 systemLogger.debug("Login successfull with username: " + tfUserName.getText());

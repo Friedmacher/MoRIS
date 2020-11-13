@@ -11,8 +11,13 @@ public interface IMain {
     public static final String VIEW_APP_VIEW_ID = "viewMain";
     public static final String MAIN_APP_TITLE = "MoRIS";
     
+    public static final String ONBOARD_VIEW = "/com/moris/sys/onboarding/view/OnboardingView.fxml";
+    public static final String ONBOARD_VIEW_ID = "viewOnboarding";
+    public static final String ONBOARD_TITLE = "Onboarding";
+
+    
     public static final String LOGIN_VIEW = "/com/moris/sys/login/view/LoginView.fxml";
-    public static final String LOGIN_VIEW_ID = "loginView";
+    public static final String LOGIN_VIEW_ID = "viewLogin";
     public static final String LOGIN_TITLE = "Login";
     
     public static final String VIEW_BUPA_OVERVIEW = "/com/moris/bupa/view/BusinessPartnerOverviewView.fxml";
