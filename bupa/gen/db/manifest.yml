@@ -1,0 +1,11 @@
+---
+applications:
+  - name: bupa-db-deployer
+    path: .
+    no-route: true
+    health-check-type: process
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    services:
+      - bupa-db

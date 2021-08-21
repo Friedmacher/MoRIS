@@ -1,0 +1,5 @@
+ID;companyName;firstName;lastName;bupaType_ID
+20000000-7d57-4e76-b14c-e53fd97dca10;SAP Österreich GmbH;Manuel;Friedmacher;20000001-7d57-4e76-b14c-e53fd97dca10
+20000000-7d57-4e76-b14c-e53fd97dca11;IBM;Max;Mustermann;20000001-7d57-4e76-b14c-e53fd97dca10
+20000000-7d57-4e76-b14c-e53fd97dca12;Conrad Österreich;;;20000001-7d57-4e76-b14c-e53fd97dca11
+20000000-7d57-4e76-b14c-e53fd97dca13;SAP Österreich GmbH;;;20000001-7d57-4e76-b14c-e53fd97dca11
